@@ -226,6 +226,32 @@
       color: #2c3e50;
     }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .contact-section {
       background: white;
       border-radius: 10px;
@@ -319,6 +345,12 @@
           <div class="label">Ytra mál (L × B × H)</div>
           <div class="value">4.230 × 2.020 × 2.550 mm</div>
         </div>
+      </div>
+      <div class="gallery">
+        <img src="blomert 2.jpg" alt="Hestakerra - hliðarmynd">
+        <img src="Blomert 3.jpg" alt="Hestakerra - fjögur sjónarhorn">
+        <img src="Blomert 4.jpg" alt="Hestakerra - innra borð">
+        <img src="Blomert 1.png" alt="Hestakerra - rampur">
       </div>
     </section>
 
